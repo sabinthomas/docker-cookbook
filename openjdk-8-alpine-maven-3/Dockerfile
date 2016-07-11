@@ -16,5 +16,7 @@ RUN MAVEN_VERSION=3.3.9 && \
     rm -f apache-maven-$MAVEN_VERSION-bin.tar.gz
 ENV PATH=${PATH}:/maven/bin
 
+RUN alias l=ls
+
 EXPOSE 8080
 
